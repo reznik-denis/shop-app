@@ -3,9 +3,9 @@
     {
       "id": "1",
       "title": "Product item 1",
-      "link": "/product1",
+      "link": "product1",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2016/08/13/00/46/boswellia-sacra-1590063_960_720.jpg",
       "price": "1200",
       "discount": 0,
       "characteristic": [
@@ -35,9 +35,9 @@
     {
       "id": "2",
       "title": "Product item 2",
-      "link": "/product2",
+      "link": "product2",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2013/02/15/02/22/hangar-81779_960_720.jpg",
       "price": "1600",
       "discount": 10,
       "characteristic": [
@@ -67,9 +67,9 @@
     {
       "id": "3",
       "title": "Long product name item 3",
-      "link": "/product3",
+      "link": "product3",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2018/05/19/23/52/plant-3414671_960_720.jpg",
       "price": "1600",
       "discount": 0,
       "characteristic": [
@@ -99,9 +99,9 @@
     {
       "id": "4",
       "title": "Product item 4",
-      "link": "/product4",
+      "link": "product4",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2019/05/18/19/22/bank-4212357_960_720.jpg",
       "price": "1800",
       "discount": 0,
       "characteristic": [
@@ -131,9 +131,9 @@
     {
       "id": "5",
       "title": "Product item 5",
-      "link": "/product5",
+      "link": "product5",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2018/03/27/19/47/baseball-3267115_960_720.jpg",
       "price": "900",
       "discount": 50,
       "characteristic": [
@@ -163,9 +163,9 @@
     {
       "id": "6",
       "title": "Product item 6",
-      "link": "/product6",
+      "link": "product6",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2019/03/03/18/03/based-4032496_960_720.jpg",
       "price": "2500",
       "discount": 0,
       "characteristic": [
@@ -195,9 +195,9 @@
     {
       "id": "7",
       "title": "Product item 7",
-      "link": "/product7",
+      "link": "product7",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2015/09/18/03/43/cheese-cake-945014_960_720.jpg",
       "price": "2000",
       "discount": 0,
       "characteristic": [
@@ -227,9 +227,9 @@
     {
       "id": "8",
       "title": "Product item 8",
-      "link": "/product8",
+      "link": "product8",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2015/05/01/17/33/first-course-748789_960_720.jpg",
       "price": "1800",
       "discount": 0,
       "characteristic": [
@@ -259,9 +259,9 @@
     {
       "id": "9",
       "title": "Product item 9",
-      "link": "/product9",
+      "link": "product9",
       "categoryLink": "/category",
-      "image": "Подставить самому",
+      "image": "https://cdn.pixabay.com/photo/2012/10/01/16/14/black-forest-cake-58676_960_720.jpg",
       "price": "1800",
       "discount": 15,
       "characteristic": [

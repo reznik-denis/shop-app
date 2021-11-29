@@ -1,0 +1,195 @@
+.title {
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.thumb {
+  position: relative;
+  max-width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shortInformation {
+  max-width: 450px;
+  height: auto;
+  text-align: left;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.informationTitle {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+}
+
+.newPrice {
+  color: red;
+}
+
+.lable {
+  position: absolute;
+  text-align: center;
+  top: -2%;
+  left: -15%;
+  transform: rotate(-45deg);
+  background-color: green;
+  color: #f8f8f8;
+  width: 200px;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+
+.list {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itemList {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #f8f8f8;
+  margin: 5px;
+}
+
+.itemList > p {
+  margin: 0;
+}
+
+.listDitail {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.listDitail > ul {
+  list-style: none;
+  font-size: 18px;
+  margin: 25px 0;
+  padding: 0 10px 0 10px;
+}
+
+.descriprionText {
+  padding: 0 10px 0 10px;
+  text-align: left;
+}
+
+.descriptionTitle {
+  font-size: 22px;
+  text-align: center;
+}
+
+.itemFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemFlex > p {
+  margin: 0 0 20px 0;
+}
+
+.item {
+  display: flex;
+  flex-grow: 1;
+}
+
+.item::after {
+  width: 100%;
+  border-bottom: 2px dashed rgba(97, 99, 105, 0.12);
+  order: 2;
+  position: relative;
+  content: '';
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.descriprionText > ul {
+  list-style-type: square;
+}
+
+.descriprionText > ul > li,
+.descriprionText > ul > li > ul > li,
+.descriprionText > ol > li {
+  margin: 5px 0 5px 0;
+}
+
+.descriprionText > table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.descriprionText > table th {
+  text-align: center;
+}
+
+.descriprionText > table th,
+.descriprionText > table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    justify-content: space-evenly;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .informationTitle {
+    font-size: 25px;
+  }
+  .flex {
+    justify-content: left;
+  }
+  .description {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .lable {
+    top: -1%;
+    left: -25%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .lable {
+    top: -2%;
+    left: -20%;
+  }
+}

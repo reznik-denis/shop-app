@@ -1,23 +1,31 @@
-import { useNavigate } from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import s from './caruselProducts.module.css';
+
+import Slider from "react-slick";
 import goUp from "services/goUp";
+import settings from "./settings";
 
 import { ItemProduct } from "Components/ItemProducts";
 import { Button } from "Components/Button";
-import s from './ListProducts.module.css'
+import { selectors } from '../../redux';
+import { useSelector } from "react-redux";
+import { useNavigate } from 'react-router-dom';
 
-
-export default function ListProducts({ list }) {
+export default function CaruselProducts() {
+    const list = useSelector(selectors.getProducts);
     const navigate = useNavigate();
 
     const handleOnClick = (category, link) => {
         navigate(`${category}/${link}`);
         goUp()
     }
-    
-    return <ul className={s.list}>
+
+  return (<ul className={s.listCarusel}>
+    <Slider {...settings}>
         {list && list.map(item => 
-            <li key={item.id} className={s.item}>
-                <ItemProduct data={item} >
+            <li key={item.id}>
+                <ItemProduct data={item}>
                     <Button
                         title="BUY"
                         link={item.link}
@@ -27,5 +35,7 @@ export default function ListProducts({ list }) {
                 </ItemProduct>
             </li>
         )}
-    </ul>
+    </Slider>
+  </ul>
+  );
 }

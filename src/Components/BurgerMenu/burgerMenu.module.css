@@ -1,0 +1,44 @@
+.burgerBtn {
+  border: none;
+  background-color: transparent;
+}
+
+.burgerBtn > img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+}
+
+.menuContent {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 91px;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateX(0);
+  transition: all 0.4s;
+}
+
+.menuClose {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 91px;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateX(100%);
+  transition: all 0.4s;
+}

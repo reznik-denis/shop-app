@@ -5,12 +5,10 @@ import s from './appBar.module.css'
 
 
 export default function AppBar() {
-    return (
-        <>
-            <header className={s.main}>
+    return (<><header className={s.header}>
                 <Navigation />
             </header>
-            <main>
+            <main className={s.main}>
                 <Outlet/>
             </main>
             <footer>

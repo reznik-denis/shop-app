@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
+
+import s from './PaginatedItems.module.css';
+import goUp from "services/goUp";
+
 import { ListProducts } from 'Components/ListProducts';
-import s from './PaginatedItems.module.css'
 
 export default function PaginatedItems({ itemsPerPage, expenses }) {
   const [currentItems, setCurrentItems] = useState(expenses);
@@ -17,6 +20,7 @@ export default function PaginatedItems({ itemsPerPage, expenses }) {
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % expenses.length;
     setItemOffset(newOffset);
+    goUp()
   };
 
   return (
@@ -30,11 +34,11 @@ export default function PaginatedItems({ itemsPerPage, expenses }) {
         pageCount={pageCount}
         previousLabel="<"
         renderOnZeroPageCount={null}
-              containerClassName={s.container}
-              pageClassName={s.link}
-              nextClassName={s.nextBtn}
-              previousClassName={s.prevBtn}
-              activeClassName={s.activeBtn}
+        containerClassName={s.container}
+        pageClassName={s.link}
+        nextClassName={s.nextBtn}
+        previousClassName={s.prevBtn}
+        activeClassName={s.activeBtn}
       />
     </>
   );

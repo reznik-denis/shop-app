@@ -1,8 +1,10 @@
-import s from './product.module.css';
-import { Button } from 'Components/Button'
 import shortid from 'shortid';
+
+import s from './product.module.css';
 import addDefaultSrc from 'services/addDefaultStr';
+
 import { Carusel } from 'Components/CaruselProdicts';
+import { Button } from 'Components/Button'
 
 export default function Product({ item }) {
     const { title, image, price, discount, characteristic, text } = item;

@@ -1,9 +1,10 @@
+import { useState } from 'react';
+
 import s from './burgerMenu.module.css';
 import MenuIcon from 'static/image/menu.svg';
 import CloseIcon from 'static/image/close.svg'
-import { NavigationItem } from 'Components/NavigationItem';
 
-import { useState } from 'react';
+import { NavigationItem } from 'Components/NavigationItem';
 
 export default function BurgerMenu() {
     const [isOpen, setIsOpen] = useState(false)

@@ -1,7 +1,9 @@
-import Navigation from '../Navigation/Navigation'
-import Footer from "../Footer/Footer";
 import { Outlet } from 'react-router-dom';
 import s from './appBar.module.css'
+
+import { Navigation } from 'Components/Navigation'
+import { Footer } from "Components/Footer";
+
 
 
 export default function AppBar() {

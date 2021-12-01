@@ -1,9 +1,13 @@
-import { selectors } from '../redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useSelector } from "react-redux";
+
+import s from './views.module.css';
+import { selectors } from '../redux';
+
 import { SortSelector } from 'Components/SortSelector';
 import { PaginatedItems } from 'Components/PaginatedItems';
+
 
 const sortOptions = [
   { value: 'ascending', label: 'Sort by ascending' },
@@ -19,8 +23,7 @@ export default function Category() {
     if (location.search !== '') {
       return
     }
-    navigate({...location, search: `sortBy=ascending`
-    })
+    navigate({...location, search: `sortBy=ascending`})
   }, [navigate, location])
 
   const sortOrder = new URLSearchParams(location.search).get('sortBy')
@@ -42,7 +45,9 @@ export default function Category() {
     <SortSelector
       options={sortOptions}
       onChange={onSortOrderChange}
-      value={sortOrder ?? 'ascending'}/>
-    <PaginatedItems itemsPerPage={6} expenses={ expenses }/>
+      value={sortOrder ?? 'ascending'} />
+    <div className={s.marginCategory}>
+        <PaginatedItems itemsPerPage={6} expenses={ expenses }/>
     </div>
+  </div>
 }

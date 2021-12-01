@@ -1,0 +1,15 @@
+.marginCategory {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  .marginCategory {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.titleHome {
+  font-size: 28px;
+}

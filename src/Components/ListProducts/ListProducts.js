@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import goUp from "services/goUp";
+import s from './ListProducts.module.css';
 
+import goUp from "services/goUp";
 import { ItemProduct } from "Components/ItemProducts";
 import { Button } from "Components/Button";
-import s from './ListProducts.module.css'
+
 
 
 export default function ListProducts({ list }) {

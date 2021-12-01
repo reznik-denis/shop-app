@@ -1,0 +1,35 @@
+.container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.link,
+.nextBtn,
+.prevBtn {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(222, 236, 236);
+  border-radius: 4px;
+  transition: 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.prevBtn {
+  cursor: pointer;
+}
+
+.activeBtn {
+  background-color: rgb(206, 206, 206);
+}
+
+.link:hover,
+.nextBtn:hover,
+.prevBtn:hover {
+  transform: scale(1.1);
+}

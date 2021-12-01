@@ -4,6 +4,16 @@
   flex-wrap: wrap;
   padding: 0;
   justify-content: center;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  .list {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .item {
